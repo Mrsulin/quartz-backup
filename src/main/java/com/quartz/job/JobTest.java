@@ -45,8 +45,8 @@ public class JobTest {
         //全局监听
         //scheduler.getListenerManager().addJobListener(new MyJobListener(), EverythingMatcher.allJobs());
         //局部监听 --仅仅监听某个jobkey--  jobkey=name+group
-        scheduler.getListenerManager().addJobListener(new MyJobListener(), KeyMatcher.keyEquals(JobKey.jobKey("job1","group1")));
-        scheduler.getListenerManager().addTriggerListener(new MyTriggerListener(),EverythingMatcher.allTriggers());
+//        scheduler.getListenerManager().addJobListener(new MyJobListener(), KeyMatcher.keyEquals(JobKey.jobKey("job1","group1")));
+//        scheduler.getListenerManager().addTriggerListener(new MyTriggerListener(),EverythingMatcher.allTriggers());
         scheduler.start();
 
 
